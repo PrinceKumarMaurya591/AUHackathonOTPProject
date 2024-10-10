@@ -1,0 +1,5 @@
+package com.au.otp.config;
+
+public class RedisConfig {
+
+}

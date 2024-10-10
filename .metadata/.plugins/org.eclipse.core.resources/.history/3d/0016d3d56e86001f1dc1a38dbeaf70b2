@@ -1,0 +1,43 @@
+package com.au.otp.payload.util;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import lombok.Data;
+
+@Configuration
+@Data
+public class OTPData {
+
+    @Value("${esb.otp.url.generateOtp}")
+    private String generateOtpUrl;
+
+    @Value("${esb.otp.url.validateOtp}")
+    private String validateOtpUrl;
+
+    @Value("${esb.otp.url.regenerateOtp}")
+    private String regenerateOtpUrl;
+
+    @Value("${otp.api.channel}")
+    private String channel;
+
+    @Value("${otp.api.otptype}")
+    private String otpType;
+
+    @Value("${otp.api.timeout}")
+    private String timeOut;
+
+    @Value("${fastag.recharge.otp.api.msgcontent}")
+    private String msgContent;
+
+    @Value("${otp.error.notfound}")
+    private String noOtpFoundError;
+
+    @Value("${otp.api.length}")
+    private String otpLength;
+
+    @Value("${otp.api.connectiontimeOut}")
+    private Long connectionTimeOut;
+
+    @Value("${otp.api.optsuccessMsg}")
+    private String otpSuccessMsg;
+}

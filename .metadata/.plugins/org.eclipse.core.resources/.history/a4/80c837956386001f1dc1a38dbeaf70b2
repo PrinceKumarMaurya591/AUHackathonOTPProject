@@ -1,0 +1,5 @@
+package com.au.otp.entity;
+
+public class OTPEntity {
+
+}

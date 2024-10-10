@@ -1,0 +1,5 @@
+package com.au.otp.exception;
+
+public class CustomeTimeoutException {
+
+}

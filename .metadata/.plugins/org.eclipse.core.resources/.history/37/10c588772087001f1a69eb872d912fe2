@@ -1,0 +1,5 @@
+package com.au.otp.controller;
+
+public class GenrationController {
+
+}

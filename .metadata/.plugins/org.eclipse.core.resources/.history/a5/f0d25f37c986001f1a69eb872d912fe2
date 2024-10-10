@@ -1,0 +1,33 @@
+spring.application.name=otpgenration
+
+server.port=8080
+spring.datasource.url= jdbc:mysql://localhost:3306/fullstatcklearning?allowPublicKeyRetrieval=true&useSSL=false
+
+spring.datasource.username= root
+spring.datasource.password= root
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto= update
+
+
+# application.properties
+otp.aes.encryption.key=your-encryption-key
+otp.aes.encryptioninit.vector=your-init-vector
+otp.aes.aes.mode=AES/CBC/PKCS5Padding  # or whatever mode you're using
+
+fastagservice.reqTime=1  # or whatever value you want to set
+
+
+
+esb.otp.url.generateOtp=your_generate_otp_url
+esb.otp.url.validateOtp=your_validate_otp_url
+esb.otp.url.regenerateOtp=your_regenerate_otp_url
+otp.api.channel=your_channel
+otp.api.otptype=your_otp_type
+otp.api.timeout=your_timeout
+fastag.recharge.otp.api.msgcontent=your_msg_content
+otp.error.notfound=your_no_otp_found_error
+otp.api.length=your_otp_length
+otp.api.connectiontimeOut=your_connection_timeout
+otp.api.optsuccessMsg=your_otp_success_msg
+

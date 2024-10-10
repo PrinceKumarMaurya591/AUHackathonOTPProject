@@ -1,0 +1,5 @@
+package com.au.otp.payload.response;
+
+public class OTPResponse {
+
+}

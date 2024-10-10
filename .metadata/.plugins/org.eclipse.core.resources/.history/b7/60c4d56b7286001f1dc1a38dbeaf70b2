@@ -1,0 +1,5 @@
+package com.au.otp.payload.request;
+
+public class RegenerateOTPRequest {
+
+}

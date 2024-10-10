@@ -1,0 +1,35 @@
+spring.application.name=otpgenration
+
+server.port=8080
+spring.datasource.url= jdbc:mysql://localhost:3306/fullstatcklearning?allowPublicKeyRetrieval=true&useSSL=false
+
+spring.datasource.username= root
+spring.datasource.password= root
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto= update
+
+
+# application.properties
+otp.aes.encryption.key=your-encryption-key
+otp.aes.encryptioninit.vector=your-init-vector
+otp.aes.aes.mode=AES/CBC/PKCS5Padding  # or whatever mode you're using
+
+fastagservice.reqTime=1  # or whatever value you want to set
+
+
+
+esb.otp.url.generateOtp=http://localhost:8080/otp/generate-otp
+esb.otp.url.validateOtp=http://localhost:8080/otp/validate-otp
+esb.otp.url.regenerateOtp=http://localhost:8080/otp/regenerate-otp
+
+otp.api.channel=WEB // or MOBILE or API, depending on your application context
+otp.api.otptype=NUMERIC // or ALPHANUMERIC depending on the type of OTP you want (numeric or a mix of characters)
+otp.api.timeout=300 // Timeout duration in seconds, e.g., 300 seconds (5 minutes)
+fastag.recharge.otp.api.msgcontent=Your OTP code is {OTP}. Please do not share it with anyone. // Customize message as needed
+otp.error.notfound=No OTP found for this request. Please try again.
+otp.api.length=6 // Length of OTP, e.g., 6 digits
+otp.api.connectiontimeOut=5000 // Connection timeout in milliseconds, e.g., 5000 (5 seconds)
+otp.api.optsuccessMsg=OTP sent successfully. Please check your mobile. // Success message shown when OTP is sent
+
+

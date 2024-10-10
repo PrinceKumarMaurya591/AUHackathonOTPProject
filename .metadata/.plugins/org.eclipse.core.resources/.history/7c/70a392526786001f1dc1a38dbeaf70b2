@@ -1,0 +1,5 @@
+package com.au.otp.payload.constants;
+
+public class OTPStatus {
+
+}

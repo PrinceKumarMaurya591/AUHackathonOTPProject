@@ -1,0 +1,29 @@
+package com.au.otp.annotations;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
+import lombok.extern.slf4j.Slf4j;
+
+@Component
+@Slf4j
+public class RequestTimeValidator implements ConstraintValidator<RequestTimeValidation, Long> {
+
+    @Value("${fastagservice.reqTime}")
+    private long diff;
+
+    @Override
+    public boolean isValid(Long reqTime, ConstraintValidatorContext context) {
+        long diffTime = Math.abs(System.currentTimeMillis() - reqTime);
+
+        log.info("System Date: {} and Request Time: {}", System.currentTimeMillis(), reqTime);
+        log.info("Difference between request time and system time: {}", diffTime);
+
+        if (diffTime <= 60 * 1000 * diff) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}

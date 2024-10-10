@@ -1,0 +1,5 @@
+package com.au.otp.annotations;
+
+public class UtcTimeStampValidation {
+
+}

@@ -1,0 +1,5 @@
+package com.au.otp.service;
+
+public class OTPService {
+
+}

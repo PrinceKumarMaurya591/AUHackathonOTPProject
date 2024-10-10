@@ -1,0 +1,17 @@
+spring.application.name=otpgenration
+
+server.port=8080
+spring.datasource.url= jdbc:mysql://localhost:3306/fullstatcklearning?allowPublicKeyRetrieval=true&useSSL=false
+
+spring.datasource.username= root
+spring.datasource.password= root
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto= update
+
+
+# application.properties
+otp.aes.encryption.key=your-encryption-key
+otp.aes.encryptioninit.vector=your-init-vector
+otp.aes.aes.mode=AES/CBC/PKCS5Padding  # or whatever mode you're using
+

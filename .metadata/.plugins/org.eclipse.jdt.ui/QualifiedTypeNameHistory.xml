@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="com.au.otp.payload.util.CommonUtil"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="org.springframework.data.repository.history.RevisionRepository"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="com.au.otp.payload.request.RegenerateOTPRequest"/>
+    <fullyQualifiedTypeName name="com.au.otp.entity.OTPEntity"/>
+    <fullyQualifiedTypeName name="com.au.otp.repository.OTPRepository"/>
+    <fullyQualifiedTypeName name="io.netty.handler.timeout.ReadTimeoutException"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseStatus"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="com.au.otp.config.GenericWebClient"/>
+    <fullyQualifiedTypeName name="com.au.otp.payload.util.OTPData"/>
+    <fullyQualifiedTypeName name="com.au.otp.aes.AESOTPUtility"/>
+    <fullyQualifiedTypeName name="com.au.otp.annotations.RequestTimeValidation"/>
+    <fullyQualifiedTypeName name="com.au.otp.payload.request.ValidateOTPRequest"/>
+    <fullyQualifiedTypeName name="com.au.otp.payload.response.OTPResponse"/>
+    <fullyQualifiedTypeName name="com.au.otp.payload.constants.OTPStatus"/>
+    <fullyQualifiedTypeName name="com.au.otp.payload.request.OTPRequest"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.hibernate.envers.Audited"/>
+    <fullyQualifiedTypeName name="org.hibernate.envers.NotAudited"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Embedded"/>
+    <fullyQualifiedTypeName name="com.au.otp.service.entity.DefaultEntity"/>
+    <fullyQualifiedTypeName name="com.au.otp.payload.constants.AppConstants"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="com.au.otp.payload.util.DateUtil"/>
+    <fullyQualifiedTypeName name="com.au.otp.payload.request.OTPDetailsRequest"/>
+    <fullyQualifiedTypeName name="com.au.otp.exception.OTPException"/>
+    <fullyQualifiedTypeName name="lombok.EqualsAndHashCode"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+</qualifiedTypeNameHistroy>

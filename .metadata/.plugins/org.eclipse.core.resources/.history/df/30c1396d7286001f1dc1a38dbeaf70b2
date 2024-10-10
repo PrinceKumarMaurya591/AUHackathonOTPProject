@@ -1,0 +1,5 @@
+package com.au.otp.service.exception;
+
+public class OTPException extends Exception {
+
+}

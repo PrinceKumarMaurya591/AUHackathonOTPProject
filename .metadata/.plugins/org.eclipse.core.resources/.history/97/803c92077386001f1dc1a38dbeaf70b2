@@ -1,0 +1,16 @@
+package com.au.otp.service;
+
+import com.au.otp.payload.request.OTPDetailsRequest;
+import com.au.otp.payload.request.OTPRequest;
+import com.au.otp.payload.request.RegenerateOTPRequest;
+import com.au.otp.payload.request.ValidateOTPRequest;
+import com.au.otp.payload.response.OTPResponse;
+
+public interface OTPService {
+	
+	OTPResponse sendOTP(OTPRequest otpRequest);
+	OTPResponse validateOTP(ValidateOTPRequest otpRequest);
+	OTPResponse reGenrateOTP(RegenerateOTPRequest otpRequest);
+	boolean isOtpValidationComplete(OTPDetailsRequest otpRequest);
+
+}

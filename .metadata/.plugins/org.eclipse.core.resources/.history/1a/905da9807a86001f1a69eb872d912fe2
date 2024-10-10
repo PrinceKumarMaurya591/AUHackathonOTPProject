@@ -1,0 +1,31 @@
+package com.au.otp.payload.request;
+
+import com.au.otp.annotations.RequestTimeValidation;
+
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+public class RegenerateOTPRequest {
+    private String requestId;
+    private String channel;
+    private String mobile;
+
+    // @NotEmpty(message = "username should not be empty ")
+    private String username;
+
+    @NotEmpty(message = "{custid.empty.msg}")
+    private String custRef;
+
+    @Min(value = 1, message = "{dateTime.empty.msg}")
+    @RequestTimeValidation(message = "{reqTime.diff.msg}")
+    private Long reqTime;
+}

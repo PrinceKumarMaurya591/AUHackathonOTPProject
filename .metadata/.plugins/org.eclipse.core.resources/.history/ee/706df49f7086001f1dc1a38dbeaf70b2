@@ -1,0 +1,25 @@
+package com.au.otp.payload.response;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@JsonInclude(Include.NON_NULL)
+public class OTPResponse {
+    private String respMessage; // statusDesc
+    private String custRef;
+    private String statusCode;
+    private String requestStatus;
+    private String requestId;
+
+    public static OTPResponse buildResponse(OTPResponse response) {
+        response.setRequestStatus(null);
+        response.setRequestId(null);
+        return response;
+    }
+}
